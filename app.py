@@ -7,11 +7,11 @@ data = json.load(pokedex)
 for pokemon in data:
     print (pokemon ["name"])
 
-whaaa=input("What pokemon do you wanna see?")
+whaaa=input("What pokemon do you wanna see? ")
 for x in data:
-    print(x)
 
-language = input("What language? (english, japanese, chinese, french) ")
+    language = input("What language? (english, japanese, chinese, french) ")
+    pokemon["id"]=1
 if language == "english":
     print (pokemon ["name"] ["english"])
 if language == "japanese":
