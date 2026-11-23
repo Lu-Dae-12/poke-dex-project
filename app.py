@@ -9,10 +9,14 @@ for pokemon in data:
 
 lang = "What lang"
 for pokemon in data:
-    print(pokemon ["name"]["english"])
-    print(pokemon ["name"]["japanese"])
-    print(pokemon ["name"]["chinese"])
-    print(pokemon ["name"]["french"])
+    if lang=="english":
+        print(pokemon ["name"]["english"])
+    if lang=="japanese":
+        print(pokemon ["name"]["japanese"])
+    if lang=="chinese":
+        print(pokemon ["name"]["chinese"])
+    if lang=="french":
+        print(pokemon ["name"]["french"])
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
 
