@@ -7,19 +7,12 @@ data = json.load(pokedex)
 for pokemon in data:
     print (pokemon ["name"])
 
-whaaa=input("What pokemon do you wanna see? ")
-for x in data:
-
-    language = input("What language? (english, japanese, chinese, french) ")
-    pokemon["id"]=1
-if language == "english":
-    print (pokemon ["name"] ["english"])
-if language == "japanese":
-    print (pokemon ["name"] ["japanese"])
-if language == "chinese":
-    print (pokemon ["name"] ["chinese"])
-if language == "french":
-    print (pokemon ["name"] ["french"])
+lang = "What lang"
+for pokemon in data:
+    print(pokemon ["name"]["english"])
+    print(pokemon ["name"]["japanese"])
+    print(pokemon ["name"]["chinese"])
+    print(pokemon ["name"]["french"])
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
 
