@@ -11,6 +11,5 @@ for user in users:
     try:    
         if user["role"]=="admin":
             print(user['name'])
-
     except KeyError:
         continue
